@@ -26,10 +26,7 @@ namespace CapaVistaSeguridadHSC
             navegador1.ObtenerNombreDGV(this.dvgConsulta);
             navegador1.LlenarTabla();
             navegador1.ObtenerReferenciaFormActual(this);
-            //String cadena = txtprueba.Text;
-            //navegador1.pruebaMensaje(cadena);
 
-            // Actualizacion de Permisos, Liam Patrick Bernard García - 0901-18-10092
             navegador1.usuario = "admin";
             navegador1.aplicacion = "Mantenimiento Módulo";
             navegador1.ActualizaPermisos();
