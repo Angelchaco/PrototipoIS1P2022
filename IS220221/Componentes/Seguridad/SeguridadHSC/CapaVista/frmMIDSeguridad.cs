@@ -150,5 +150,11 @@ namespace CapaVistaSeguridadHSC
             frmMantenimientoEmpleados fe = new frmMantenimientoEmpleados();
             fe.Show();
         }
+
+        private void nominaDetalleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmProcesoNominaD fd = new frmProcesoNominaD();
+            fd.Show();
+        }
     }
 }

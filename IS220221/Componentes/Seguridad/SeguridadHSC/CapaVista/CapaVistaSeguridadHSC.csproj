@@ -21,6 +21,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -85,6 +86,12 @@
     </Compile>
     <Compile Include="frmModulo.Designer.cs">
       <DependentUpon>frmModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProcesoNominaD.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProcesoNominaD.Designer.cs">
+      <DependentUpon>frmProcesoNominaD.cs</DependentUpon>
     </Compile>
     <Compile Include="PendienteDeRevision.cs">
       <SubType>Form</SubType>
@@ -174,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmModulo.resx">
       <DependentUpon>frmModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProcesoNominaD.resx">
+      <DependentUpon>frmProcesoNominaD.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PendienteDeRevision.resx">
       <DependentUpon>PendienteDeRevision.cs</DependentUpon>

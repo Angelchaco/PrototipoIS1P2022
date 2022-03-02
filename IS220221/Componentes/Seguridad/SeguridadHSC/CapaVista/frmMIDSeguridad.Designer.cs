@@ -32,16 +32,17 @@ namespace CapaVistaSeguridadHSC
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMIDSeguridad));
             this.menuStrip = new System.Windows.Forms.MenuStrip();
             this.inicioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.mantenimientoEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.mantenimientosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.asignacionesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnCambioContraseña = new System.Windows.Forms.ToolStripMenuItem();
             this.btnBitacora = new System.Windows.Forms.ToolStripMenuItem();
             this.bitácoraDeLoginToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.txtUsuario = new System.Windows.Forms.TextBox();
-            this.mantenimientoEmpleadosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ayudaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.salirToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.txtUsuario = new System.Windows.Forms.TextBox();
+            this.nominaDetalleToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -70,10 +71,12 @@ namespace CapaVistaSeguridadHSC
             this.inicioToolStripMenuItem.Size = new System.Drawing.Size(54, 24);
             this.inicioToolStripMenuItem.Text = "Abrir";
             // 
-            // toolStripMenuItem1
+            // mantenimientoEmpleadosToolStripMenuItem
             // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 24);
+            this.mantenimientoEmpleadosToolStripMenuItem.Name = "mantenimientoEmpleadosToolStripMenuItem";
+            this.mantenimientoEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(267, 24);
+            this.mantenimientoEmpleadosToolStripMenuItem.Text = "Mantenimiento Empleados";
+            this.mantenimientoEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoEmpleadosToolStripMenuItem_Click);
             // 
             // mantenimientosToolStripMenuItem
             // 
@@ -81,8 +84,15 @@ namespace CapaVistaSeguridadHSC
             this.mantenimientosToolStripMenuItem.Size = new System.Drawing.Size(93, 24);
             this.mantenimientosToolStripMenuItem.Text = "Catalogos";
             // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(12, 24);
+            // 
             // asignacionesToolStripMenuItem1
             // 
+            this.asignacionesToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.nominaDetalleToolStripMenuItem});
             this.asignacionesToolStripMenuItem1.Name = "asignacionesToolStripMenuItem1";
             this.asignacionesToolStripMenuItem1.Size = new System.Drawing.Size(87, 24);
             this.asignacionesToolStripMenuItem1.Text = "Procesos";
@@ -110,21 +120,6 @@ namespace CapaVistaSeguridadHSC
             this.bitácoraDeLoginToolStripMenuItem.Text = "Bitácora de Login";
             this.bitácoraDeLoginToolStripMenuItem.Click += new System.EventHandler(this.bitácoraDeLoginToolStripMenuItem_Click);
             // 
-            // txtUsuario
-            // 
-            this.txtUsuario.Location = new System.Drawing.Point(751, 0);
-            this.txtUsuario.Name = "txtUsuario";
-            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
-            this.txtUsuario.TabIndex = 5;
-            this.txtUsuario.Visible = false;
-            // 
-            // mantenimientoEmpleadosToolStripMenuItem
-            // 
-            this.mantenimientoEmpleadosToolStripMenuItem.Name = "mantenimientoEmpleadosToolStripMenuItem";
-            this.mantenimientoEmpleadosToolStripMenuItem.Size = new System.Drawing.Size(267, 24);
-            this.mantenimientoEmpleadosToolStripMenuItem.Text = "Mantenimiento Empleados";
-            this.mantenimientoEmpleadosToolStripMenuItem.Click += new System.EventHandler(this.mantenimientoEmpleadosToolStripMenuItem_Click);
-            // 
             // ayudaToolStripMenuItem
             // 
             this.ayudaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -136,8 +131,23 @@ namespace CapaVistaSeguridadHSC
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 24);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(109, 24);
             this.salirToolStripMenuItem.Text = "Salir";
+            // 
+            // txtUsuario
+            // 
+            this.txtUsuario.Location = new System.Drawing.Point(751, 0);
+            this.txtUsuario.Name = "txtUsuario";
+            this.txtUsuario.Size = new System.Drawing.Size(100, 20);
+            this.txtUsuario.TabIndex = 5;
+            this.txtUsuario.Visible = false;
+            // 
+            // nominaDetalleToolStripMenuItem
+            // 
+            this.nominaDetalleToolStripMenuItem.Name = "nominaDetalleToolStripMenuItem";
+            this.nominaDetalleToolStripMenuItem.Size = new System.Drawing.Size(186, 24);
+            this.nominaDetalleToolStripMenuItem.Text = "Nomina Detalle";
+            this.nominaDetalleToolStripMenuItem.Click += new System.EventHandler(this.nominaDetalleToolStripMenuItem_Click);
             // 
             // frmMIDSeguridad
             // 
@@ -174,5 +184,6 @@ namespace CapaVistaSeguridadHSC
         private System.Windows.Forms.ToolStripMenuItem mantenimientoEmpleadosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem ayudaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem salirToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem nominaDetalleToolStripMenuItem;
     }
 }
